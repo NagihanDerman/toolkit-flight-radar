@@ -12,7 +12,6 @@ This project is a Flight Radar Application that provides real-time tracking and 
 - react-leaflet
 - react-paginate
 - moment
-- react-paginate
 - bootstrap
 
 ## Application de Radar de Vol
@@ -29,9 +28,8 @@ Ce projet est une application de radar de vol qui fournit un suivi en temps rée
 - react-leaflet
 - react-paginate
 - moment
-- react-paginate
 - bootstrap
 
 ## GIF
 
-<img src=""/>
+<img src="./public/radarapp.gif"/>
