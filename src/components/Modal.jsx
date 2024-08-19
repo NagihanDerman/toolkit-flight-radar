@@ -8,7 +8,7 @@ import { setPath } from "../redux/slices/flightSlice";
 import { useDispatch } from "react-redux";
 
 const Modal = ({ detailId, close }) => {
-  // uçuş detay verisi sadece modal bileşeninde tutulacak, store'da tutmaya gerek yok
+  // uçuş detay verisi state yerine modal bilesneinde tutulur.
   const [d, setDetail] = useState(null);
 
   const dispatch = useDispatch();

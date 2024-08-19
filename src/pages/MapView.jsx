@@ -14,7 +14,6 @@ const MapView = ({ setDetailId }) => {
   const { flights, path } = useSelector((store) => store.flightReducer);
   const dispatch = useDispatch();
 
-  // icon oluşturma
   const planeIcon = icon({
     iconUrl: "plane2.png",
     iconSize: [30, 30],

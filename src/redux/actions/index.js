@@ -3,11 +3,9 @@ import axios from "axios";
 import { options } from "../../utils/constants";
 
 export const getFlights = createAsyncThunk("flight/getFlights", async () => {
-  //  1) api isteği
   const res = await axios.request(options);
-  // console.log(res);
 
-  // 2) api'dan gelen veriyi formatla
+  //api'dan gelen veriyi formatla
   // aircraft dizisi içindeki dizileri nesnelere çevirme
   const formatted = res.data.aircraft.map((item) => ({
     id: item[0],
@@ -16,6 +14,6 @@ export const getFlights = createAsyncThunk("flight/getFlights", async () => {
     lng: item[3],
   }));
 
-  // 3) aksiyonun payload'ı olucak değeri return et
+  //aksiyonun payload'ı olucak değeri return et
   return formatted;
 });
